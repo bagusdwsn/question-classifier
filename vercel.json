@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "question-classifier/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "question-classifier/app.py"
+        }
+    ]
+}
